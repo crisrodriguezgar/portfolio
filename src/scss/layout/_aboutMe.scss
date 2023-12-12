@@ -1,0 +1,38 @@
+.sectionAbout {
+  min-height: 100vh;
+  @include center-column;
+  background-color: $mostazaclaro;
+  position: relative;
+}
+
+.titleAbout {
+  text-transform: uppercase;
+  @include font($montserrat, 3rem, #ffcb72, bold);
+  padding-top: 10rem;
+  @media (min-width: 768px) {
+    font-size: 5rem;
+  }
+}
+.subtitle {
+  text-transform: uppercase;
+  @include font($montserrat, 2rem, $white, bold);
+  padding-top: 2rem;
+  @media (min-width: 768px) {
+    font-size: 3rem;
+  }
+}
+.text {
+  @include padding(6rem, 0);
+  padding-top: 2rem;
+  @include font($montserrat, 1.5rem, $white, bold);
+  @media (min-width: 768px) {
+    font-size: 2rem;
+    @include padding(8rem, 2rem);
+  }
+}
+.bicho {
+  background-color: $mostazaclaro;
+  fill: $white;
+  position: absolute;
+  bottom: 0;
+}

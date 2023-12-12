@@ -1,0 +1,22 @@
+.sectionProjects {
+  min-height: 100vh;
+  position: relative;
+  @include center-column;
+}
+.titleProjects {
+  text-transform: uppercase;
+  @include font($montserrat, 3rem, #ffcb72, bold);
+  @media (min-width: 768px) {
+    font-size: 5rem;
+  }
+}
+.bicho2 {
+  background-color: $white;
+  fill: $mostazaclaro;
+  position: absolute;
+  bottom: 0;
+}
+.container
+&__img{
+  @include size (20rem, 20rem)
+}
