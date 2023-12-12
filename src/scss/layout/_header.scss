@@ -1,0 +1,25 @@
+.header {
+  text-transform: uppercase;
+  z-index: 1;
+  opacity: 90%;
+  background-color: aquamarine;
+  &__list {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    gap: 2rem;
+    &--about {
+      cursor: pointer;
+    }
+    &--projects {
+      cursor: pointer;
+    }
+    &--tech {
+      cursor: pointer;
+    }
+
+    :hover {
+      transform: scale(1.3);
+    }
+  }
+}

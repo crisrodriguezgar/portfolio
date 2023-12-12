@@ -1,5 +1,11 @@
 @import 'core/variables';
 @import 'core/reset';
+@import 'core/mixins';
 
 @import 'layout/header';
+
+@import 'layout/aboutMe';
+@import 'layout/projects';
+@import 'layout/technologies';
+
 @import 'layout/footer';
