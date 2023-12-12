@@ -3,66 +3,95 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <title>Mi portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="icon" href="./assets/images/favicon.png" />
+    <link rel="stylesheet" href="../scss/main.scss" />
+    <script
+      src="https://kit.fontawesome.com/d65782632e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+    
   </head>
-
   <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
+    <header class="header">
+      <nav>
+        <ul class="header__list">
+          <li class="header__list--about">Sobre mí</li>
+          <li class="header__list--projects">Proyectos</li>
+          <li class="header__list--tech">Tecnologías</li>
+        </ul>
+      </nav>
+    </header>
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
-        </ul>
-        <p>Si quieres saber cúales son las rutas correctas para:</p>
-        <ul class="main__list">
-          <li>
-            una <code class="code">&lt;img /&gt;</code> mira el fichero
-            <code class="code">./src/html/partials/header.html</code>.
-          </li>
-          <li>
-            y para un <code class="code">background-image</code> mira el fichero
-            <code class="code">./src/html/scss/layout/_page.scss</code>.
-          </li>
-        </ul>
-        <p>
-          Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-          <code class="code">./src/html/index.html</code> y
-          <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-          enlaces:
+    <main>
+      <section class="sectionAbout">
+        <h1 class="titleAbout">sobre mí</h1>
+        <h2 class="subtitle">&lt;¡Hola mundo! Soy Cristina&gt;</h2>
+        <p class="text">
+          Nunca se me ha dado bien describirme, pero aquí estoy intentando que me
+          conozcas un poquito más que yo misma.
         </p>
-        <ul class="main__list">
-          <li>
-            <a class="link__adalab" href="https://adalab.es">Adalab</a>
+        <p class="text">
+          Desde pequeña he transmitido mis sentimientos y pensamientos a través de la
+          pintura, cuando fui creciendo pensé que podría estar bien estudiar lo que
+          sentían los antiguos artistas como Goya o Velazquez, ya que me veía incapaz
+          ser uno de ellos. Y así fue como acabé en Historia del Arte. Una carrera que
+          disfruté como una enana y fui muy feliz estudiándola.
+        </p>
 
-          </li>
-          <li>
-            <a class="" href="./more-info.html">Más info del starter kit</a>
+        <p class="text">
+          Pero mi interés por el arte encontró un nuevo lienzo en el mundo digital. Decidí
+          dar un giro radical y me sumergí en un bootcamp de programación. Este cambio
+          ha sido una travesía emocionante, donde mi pasión por el arte se fusiona con
+          la creatividad y la lógica del desarrollo web.
+        </p>
+        <p class="text">
+          Mi formación en historia del arte me ha brindado una perspectiva única en mi
+          enfoque hacia el diseño y la creación en el mundo digital. Cada línea de
+          código es una obra de arte en sí misma, una expresión de mi capacidad para
+          enfrentar nuevos desafíos y crear algo bonito desde una pantalla en blanco.
+        </p>
 
-          </li>
-        </ul>
-      </main>
+        <svg
+          class="bicho"
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </section>
 
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
+      <section class="sectionProjects">
+        <h2 class="titleProjects">proyectos</h2>
+        <div><img src="./assets/images/ahorcado.png" alt=""></div>
+        <svg
+          class="bicho2"
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </section>
 
-        </small>
-      </footer>
-
-    </div>
-    <script src="./assets/js/main.js"></script>
+      
+    </main>
+    
+    <script src="../js/main.js"></script>
   </body>
 </html>
