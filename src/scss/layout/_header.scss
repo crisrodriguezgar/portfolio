@@ -3,14 +3,14 @@
   z-index: 1;
   position: fixed;
   width: 100%;
-  opacity: 80%;
-  background-color: #FFE5B4;
+  opacity: 90%;
+  background-color: $rosaoscuro;
   &__list {
     display: flex;
     flex-direction: row;
     padding: 2rem;
     gap: 2rem;
-    @include font($montserrat, 1.5rem, white, bold);
+    @include font($montserrat, 1.5rem, $white, bold);
 
     &--about {
       transition: 0.8s;

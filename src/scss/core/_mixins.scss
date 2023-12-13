@@ -6,8 +6,7 @@
   }
   
 
-@mixin icon($fontWeight, $fontSize, $color) {
-  font-weight: $fontWeight;
+@mixin icon($fontSize, $color) {
   font-size: $fontSize;
   color: $color;
 }

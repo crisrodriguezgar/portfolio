@@ -1,0 +1,22 @@
+.sectionTech {
+  position: relative;
+  @include center-column;
+  background-color: $rosa;
+}
+.titleTech {
+  text-transform: uppercase;
+  @include font($montserrat, 3rem, $morado, bold);
+  @media (min-width: 768px) {
+    font-size: 5rem;
+  }
+}
+
+.containerTech {
+  padding-block: 20rem;
+}
+.bicho3 {
+  background-color: $rosa;
+  fill: $white;
+  position: absolute;
+  bottom: 0;
+}
