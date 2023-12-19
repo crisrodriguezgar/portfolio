@@ -1,22 +1,35 @@
 .sectionTech {
   position: relative;
   @include center-column;
-  background-color: $rosa;
-}
-.titleTech {
-  text-transform: uppercase;
-  @include font($montserrat, 3rem, $morado, bold);
-  @media (min-width: 768px) {
-    font-size: 5rem;
-  }
+  align-items: center;
+  background-color: $backgroundM;
 }
 
 .containerTech {
-  padding-block: 20rem;
+  width: 30rem;
+  padding-inline: 2rem;
+  margin-bottom: 5rem;
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  @media (min-width: 768px) {
+    width: 50rem;
+    margin-bottom: 15rem;
+  }
+  &__iconTech {
+    padding: 1.5rem;
+    @include icon(4rem, $backgroundMClaro);
+    @media (min-width: 768px) {
+      padding: 1rem;
+      @include icon(6rem, $backgroundMClaro);
+    }
+  }
 }
 .bicho3 {
-  background-color: $rosa;
-  fill: $white;
+  background-color:$backgroundM;
+  fill: $backgroundMClaro;
   position: absolute;
   bottom: 0;
 }

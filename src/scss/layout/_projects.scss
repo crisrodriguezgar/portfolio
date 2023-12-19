@@ -1,50 +1,59 @@
 .sectionProjects {
   min-height: 100vh;
-  position: relative;
   @include center-column;
+  background-color: $backgroundM;
+  position: relative;
+  
 }
 .titleProjects {
+  padding-block: 2rem;
   text-transform: uppercase;
-  @include font($montserrat, 3rem, $morado, bold);
+  @include font($montserrat, 3rem, $button2Text, bold);
   @media (min-width: 768px) {
-    font-size: 5rem;
+    font-size: 3.5rem;
   }
 }
 
 .box{
-  // @include padding(3rem, 15rem);
-  padding-bottom: 15rem;
+  //width: 90rem;
+  padding-bottom: 3rem;
   padding-top: 3rem;
-  padding-inline: 5rem;
+  padding-inline: 8rem;
   @include center-column;
   gap: 2rem;
+  justify-content: center;
   @media (min-width: 768px) {
     flex-direction: row;
     flex-wrap: wrap;
+    padding-inline: 25rem;
   }
 }
 .card {
-  @include size(25rem, 40rem);
+  @include size(25rem, 35rem);
   @include center-column;
-  @include btn(none, 3rem, $rosa);
+  @include btn(none, 1.5rem, $backgroundMClaro);
+  @media (min-width: 768px) {
+    @include size(25rem, 45rem);
+  }
   &__title {
-    @include margin(1.5rem, 1.5rem);
-    @include font($montserrat, 1.7rem, $rosaoscuro, bold);
+    @include margin(0.5rem, 0.5rem);
+    @include font($montserrat, 1.7rem, $highlightedText2, bold);
     text-align: center;
   }
   &__img {
-    @include margin(1.5rem, 1.5rem);
-    border-radius: 3rem;
-    @include size(20rem, 20rem);
+    @include size(30rem, 30rem);
   }
   &__tech {
-    @include font($montserrat, 1.3rem, $rosaoscuro, bold);
+    @include font($montserrat, 1.3rem, $highlightedText2, bold);
     @include padding(1.5rem, 1rem);
+  }
+  &__iconProject{
+    @include icon (2rem, $highlightedText2);
   }
 }
 .bicho2 {
-  background-color: $white;
-  fill: $rosa;
+  background-color: $backgroundMClaro;
+  fill: $backgroundM;
   position: absolute;
   bottom: 0;
 }

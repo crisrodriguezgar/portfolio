@@ -1,0 +1,65 @@
+.sectionHome {
+  background-color: $backgroundMClaro;
+  min-height: 100vh;
+  @include center-column;
+  justify-content: space-evenly;
+  @media (min-width: 1024px) {
+    flex-direction: row;
+  }
+}
+.imgHome {
+  @include center-column;
+  justify-content: center;
+  position: relative;
+  &__stain {
+    z-index: 1;
+    top: -2rem;
+    position: absolute;
+    width: 26rem;
+    @media (min-width: 768px) {
+      width: 45rem;
+      top: -20rem;
+    }
+  }
+  &__photo {
+    top: 5rem;
+    z-index: 1;
+    position: absolute;
+    width: 12rem;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+    &:hover {
+      filter: grayscale(0%);
+    }
+    @media (min-width: 768px) {
+      width: 20rem;
+      top: 0;
+    }
+  }
+}
+.textHome {
+  position: relative;
+  text-align: center;
+  top: 5rem;
+  .titleHome {
+    text-transform: uppercase;
+    @include font($montserrat, 2.5rem, $button2Text, bold);
+    padding-bottom: 2rem;
+    @media (min-width: 768px) {
+      font-size: 5rem;
+    }
+  }
+  .subtitleHome,
+  .subtitleFront {
+    @include font($montserrat, 1.5rem, $subtitle, bold);
+    @media (min-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+}
+
+.vibe {
+  background-color: $backgroundMClaro;
+  fill: $backgroundM;
+}
