@@ -9,7 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
+    <link rel="icon" href="./assets/images/mancha.png" />
     <link rel="stylesheet" href="../scss/main.scss" />
     <script
       src="https://kit.fontawesome.com/d65782632e.js"
@@ -19,106 +19,138 @@
     
   </head>
   <body>
-    <header class="header">
-      <nav>
+    <header >
+      <nav class="header">
+        <label class="hamburger">
+          <input type="checkbox">
+          <svg viewBox="0 0 32 32">
+            <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+            <path class="line" d="M7 16 27 16"></path>
+          </svg>
+        </label>
         <ul class="header__list">
-          <li class="header__list--about">Sobre mí</li>
-          <li class="header__list--projects">Proyectos</li>
-          <li class="header__list--tech">Tecnologías</li>
+          <a href="#home"><li class="header__list--about">inicio</li></a>
+          <a href="#aboutMe"><li class="header__list--about">Sobre mí</li></a>
+          <a href="#projects"><li class="header__list--projects">Proyectos</li></a>
+          <a href="#tech"><li class="header__list--tech">Tecnologías</li></a>
+        </ul>
+        <ul class="header__redes">
+          <a class="header__redes--cv" href="./assets/downloads/CV-CristinaRodriguez-FullStack.pdf" download="CV-CristinaRodriguez.pdf">CV</a>
+          <a href="https://www.linkedin.com/in/cristinarodriguezgar" target="_blank"
+            ><li><i class="fa-brands fa-linkedin header__redes--linkedin"></i></li
+          ></a>
+          <a href="https://github.com/crisrodriguezgar" target="_blank"
+            ><li><i class="fa-brands fa-github-alt header__redes--git"></i></li
+          ></a>
         </ul>
       </nav>
     </header>
 
     <main>
+      <section class="sectionHome" id="home">
+          <div class="imgHome">
+              <img class="imgHome__stain" src="./assets/images/mancha.png" alt="">
+              <img class="imgHome__photo" src="./assets/images/cris.jpg" alt="">
+          </div>
+          <div class="textHome">
+              <h2 class="subtitleHome">¡Hola! mi nombre es</h2>
+              <h1 class="titleHome">Cristina Rodríguez</h1>
+              <p class="subtitleFront">&lt;Junior Front-end Developer/&gt;</p>
+          </div>
+      </section>
+      <svg class="bicho2" viewBox="0 0 1200 110">
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"
+          ></path>
+        </svg>
       <section class="sectionAbout">
-        <h1 class="titleAbout">sobre mí</h1>
-        <h2 class="subtitle">&lt;¡Hola mundo! Soy Cristina/&gt;</h2>
+        <div class="stain">
+          <h1 class="stain__titleAbout">sobre mí</h1><img class="stain__img" src="./assets/images/mancha.png"
+            alt="icono de mancha">
+        </div>
+
         <article class="container">
           <p class="container__text">
-            Nunca se me ha dado bien describirme, pero aquí estoy, intentando que me
-            conozcas un poquito, incluso más que yo misma.
+            Nunca se me ha dado bien describirme, pero aquí estoy, <b>intentando que me conozcas un poquito</b>, incluso más
+            que yo
+            misma.
           </p>
-          <p class="container__text">
-            Desde pequeña he transmitido mis sentimientos y pensamientos a través de
-            la pintura. Cuando fui creciendo pensé que podría estar bien estudiar lo
-            que sentían los antiguos artistas como Goya o Velázquez, ya que me veía
-            incapaz ser uno de ellos. Y así fue como acabé en Historia del Arte. Una
-            carrera que disfruté como una enana y fui muy feliz estudiándola.
-          </p>
+          <div class="container__text--box">
 
+            <p class="container__text">
+              Desde pequeña he transmitido mis sentimientos y pensamientos a través de
+              la pintura. Cuando fui creciendo pensé que podría estar bien estudiar lo
+              que sentían los antiguos artistas como Leonardo Da Vinci. Y así fue como acabé estudiando <b> Historia del Arte</b>. Una
+              carrera que disfruté como una enana y fui muy feliz estudiándola.
+            </p>
+            <div><img class="container__img" src="./assets/images/lienzo.png" /><img class="container__img"
+                src="./assets/images/obras-de-arte.png" /></div>
+          </div>
           <p class="container__text">
             Pero mi interés por el arte encontró un nuevo lienzo en el mundo digital.
-            Decidí dar un giro radical y me sumergí en un bootcamp de programación.
-            Este cambio ha sido una travesía emocionante, donde mi pasión por el arte
-            se fusiona con la creatividad y la lógica del desarrollo web.
-          </p>
-          <p class="container__text">
-            Mi formación en historia del arte me ha brindado una perspectiva en la que
-            puedo mezclar el diseño y la creación en el mundo digital. Cada línea de
-            código es una obra de arte en sí misma, una expresión de mi capacidad para
-            enfrentar nuevos desafíos y crear algo bonito desde una pantalla en
-            blanco.
+            Decidí dar un giro radical con un bootcamp de <b>programación web</b>.
+            Este cambio ha sido una aventura emocionante, donde mi pasión por el arte
+            se fusiona con la <b>creatividad y la lógica</b> del desarrollo web.
           </p>
         </article>
-
-        <svg class="bicho" viewBox="0 0 1200 110">
-          <path
-            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-            class="shape-fill"
-          ></path>
-        </svg>
       </section>
-
       <section class="sectionProjects">
         <h2 class="titleProjects">proyectos</h2>
-        <div class="box">
+        <img class="box__img" src="./assets/images/mancha.png" alt="icono de mancha"><div class="box">
           <div class="card">
-            <img class="card__img" src="./assets/images/aho.png" alt="" />
+            <img class="card__img" src="./assets/images/desktop-ahorcado.png" alt="" />
             <h3 class="card__title">Juego del Ahorcado</h3>
-            <p class="card__tech">HTML | SCSS | REACT</p>
+            <p class="card__tech">HTML | SCSS | REACT</p><i class="fa-brands fa-github-alt card__iconProject"></i>
           </div>
 
           <div class="card">
-            <img class="card__img" src="./assets/images/ppt.jpg" alt="" />
+            <img class="card__img" src="./assets/images/desktop-piedra.png" alt="" />
             <h3 class="card__title">Juego Piedra, papel o tijera</h3>
-            <p class="card__tech">HTML SCSS JavaScript</p>
+            <p class="card__tech">HTML | SCSS | JavaScript</p><i class="fa-brands fa-github-alt card__iconProject"></i>
           </div>
 
           <div class="card">
-            <img class="card__img" src="./assets/images/a.png" alt="" />
+            <img class="card__img" src="./assets/images/desktop-memory.png" alt="" />
             <h3 class="card__title">Awesome cards</h3>
-            <p class="card__tech">HTML SCSS JavaScript</p>
+            <p class="card__tech">HTML | SCSS | JavaScript</p><i class="fa-brands fa-github-alt card__iconProject"></i>
           </div>
 
           <div class="card">
-            <img class="card__img" src="./assets/images/a.png" alt="" />
+            <img class="card__img" src="./assets/images/desktop-owen.png" alt="" />
+            <h3 class="card__title">Owen Wilson Woow!</h3>
+            <p class="card__tech">HTML | SCSS | REACT</p><i class="fa-brands fa-github-alt card__iconProject"></i>
+          </div>
+
+          <div class="card">
+            <img class="card__img" src="./assets/images/desktop-magicos.png" alt="" />
             <h3 class="card__title">Proyectos mágicos</h3>
-            <p class="card__tech">HTML SCSS JavaScript</p>
+            <p class="card__tech">HTML | SCSS | REACT | MySQL</p>
+            <i class="fa-brands fa-github-alt card__iconProject"></i>
           </div>
-
           <div class="card">
-            <img class="card__img" src="./assets/images/wow.jpg" alt="" />
-            <h3 class="card__title">Owen Wilson</h3>
-            <p class="card__tech">HTML SCSS JavaScript</p>
-          </div>
-
-          <div class="card">
-            <img class="card__img" src="./assets/images/a.png" alt="" />
-            <h3 class="card__title">Memory art (en construcción)</h3>
-            <p class="card__tech">HTML SCSS JavaScript</p>
+            <img class="card__img" src="./assets/images/desktop-awesome.png" alt="" />
+            <h3 class="card__title">The Awesome Profile-cards</h3>
+            <p class="card__tech">HTML | SCSS | JavaScript</p>
+            <i class="fa-brands fa-github-alt card__iconProject"></i>
           </div>
         </div>
-        <svg class="bicho2" viewBox="0 0 1200 110">
-          <path
-            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-            class="shape-fill"
-          ></path>
-        </svg>
-      </section>
 
-      <section class="sectionTech">
+      </section>
+      <section class="sectionTech" id="tech">
         <h2 class="titleTech">tecnologías</h2>
-        <div class="containerTech"></div>
+        <div class="containerTech">
+          <i class="fa-brands fa-html5 containerTech__iconTech"></i>
+          <i class="fa-brands fa-css3-alt containerTech__iconTech"></i>
+          <i class="fa-brands fa-square-js containerTech__iconTech"></i>
+          <i class="fa-brands fa-sass containerTech__iconTech"></i>
+          <i class="fa-brands fa-react containerTech__iconTech"></i>
+          <i class="fa-solid fa-database containerTech__iconTech"></i>
+          <i class="fa-brands fa-node-js containerTech__iconTech"></i>
+          <i class="fa-brands fa-git-alt containerTech__iconTech"></i>
+          <i class="fa-brands fa-figma containerTech__iconTech"></i>
+          
+        </div>
         <svg class="bicho3" viewBox="0 0 1200 110">
           <path
             d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
@@ -130,7 +162,7 @@
     </main>
     <footer>
         <div class="copy">
-          <small>© crisrodriguezgar 2023</small>
+          <p>© crisrodriguezgar 2023</p>
           <div>
             <a
               href="https://www.linkedin.com/in/cristinarodriguezgar"
