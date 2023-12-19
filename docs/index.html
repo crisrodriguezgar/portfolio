@@ -58,7 +58,7 @@
               <p class="subtitleFront">&lt;Junior Front-end Developer/&gt;</p>
           </div>
       </section>
-      <svg class="bicho2" viewBox="0 0 1200 110">
+      <svg class="bicho2" viewBox="0 0 1200 110" id="aboutMe">
           <path
             d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
             class="shape-fill"
@@ -87,7 +87,7 @@
             <div><img class="container__img" src="./assets/images/lienzo.png" /><img class="container__img"
                 src="./assets/images/obras-de-arte.png" /></div>
           </div>
-          <p class="container__text">
+          <p class="container__text" id="projects">
             Pero mi interés por el arte encontró un nuevo lienzo en el mundo digital.
             Decidí dar un giro radical con un bootcamp de <b>programación web</b>.
             Este cambio ha sido una aventura emocionante, donde mi pasión por el arte
@@ -178,21 +178,33 @@
         </svg>
       </section>
     </main>
-    <footer>
-        <div class="copy">
-          <p>© crisrodriguezgar 2023</p>
-          <div>
-            <a
-              href="https://www.linkedin.com/in/cristinarodriguezgar"
-              target="_blank"
-              ><i class="fa-brands fa-linkedin linkedin"></i
-            ></a>
-            <a href="https://github.com/crisrodriguezgar" target="_blank"
-              ><i class="fa-brands fa-github-alt git"></i
-            ></a>
-          </div>
+    <footer class="footer">
+      <div>
+        <ul class="footer__list">
+          <a href="#home">
+            <li class="footer__list--about">inicio</li>
+          </a>
+          <a href="#aboutMe">
+            <li class="footer__list--about">Sobre mí</li>
+          </a>
+          <a href="#projects">
+            <li class="footer__list--projects">Proyectos</li>
+          </a>
+          <a href="#tech">
+            <li class="footer__list--tech">Tecnologías</li>
+          </a>
+        </ul>
+      </div>
+      <div class="copy">
+        <p>© crisrodriguezgar 2023</p>
+        <div>
+          <a href="https://www.linkedin.com/in/cristinarodriguezgar" target="_blank"><i
+              class="fa-brands fa-linkedin linkedin"></i></a>
+          <a href="https://github.com/crisrodriguezgar" target="_blank"><i class="fa-brands fa-github-alt git"></i></a>
         </div>
-      </footer>
+
+      </div>
+    </footer>
     <script src="../js/main.js"></script>
   </body>
 </html>
