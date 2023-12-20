@@ -3,7 +3,8 @@
   min-height: 100vh;
   @include center-column;
   justify-content: space-evenly;
-  @media (min-width: 1024px) {
+  position: relative;
+  @media (min-width: 768px) {
     flex-direction: row;
   }
 }
@@ -42,6 +43,7 @@
   position: relative;
   text-align: center;
   top: 5rem;
+  z-index: 3;
   .titleHome {
     text-transform: uppercase;
     @include font($montserrat, 2.5rem, $button2Text, bold);
@@ -59,7 +61,13 @@
   }
 }
 
+
+.shape-fill{
+  background-color: $backgroundM;
+}
 .vibe {
   background-color: $backgroundMClaro;
   fill: $backgroundM;
+  position: absolute;
+  bottom: 0;
 }

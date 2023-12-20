@@ -15,10 +15,8 @@
 }
 
 .box{
-  //width: 90rem;
-  padding-bottom: 3rem;
-  padding-top: 3rem;
-  padding-inline: 8rem;
+  //@include padding (3rem,3rem);
+  padding-bottom: 2.5rem;
   @include center-column;
   gap: 2rem;
   justify-content: center;
@@ -29,7 +27,6 @@
   }
 }
 .card {
-  @include size(25rem, 35rem);
   @include center-column;
   @include btn(none, 1.5rem, $backgroundMClaro);
   @media (min-width: 768px) {
@@ -44,16 +41,13 @@
     @include size(30rem, 30rem);
   }
   &__tech {
-    @include font($montserrat, 1.3rem, $highlightedText2, bold);
+    @include font($montserrat, 1.3rem, $highlightedText2, 300);
     @include padding(1.5rem, 1rem);
   }
   &__iconProject{
     @include icon (2rem, $highlightedText2);
+    margin-inline: 1.5rem;
+    margin-block: 1.5rem;
+    cursor: pointer;
   }
-}
-.bicho2 {
-  background-color: $backgroundMClaro;
-  fill: $backgroundM;
-  position: absolute;
-  bottom: 0;
 }
