@@ -30,7 +30,6 @@
   @include center-column;
   @include btn(none, 1.5rem, $backgroundMClaro);
   @media (min-width: 768px) {
-    @include size(25rem, 45rem);
   }
   &__title {
     @include margin(0.5rem, 0.5rem);
@@ -38,7 +37,8 @@
     text-align: center;
   }
   &__img {
-    @include size(30rem, 30rem);
+    @include size(20rem, 14rem);
+    margin: 2.3rem;
   }
   &__tech {
     @include font($montserrat, 1.3rem, $highlightedText2, 300);
