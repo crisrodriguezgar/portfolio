@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Mi portfolio</title>
+    <title>Portfolio Cristina Rodríguez</title>
     <link
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
@@ -19,33 +19,69 @@
     
   </head>
   <body>
-    <header >
+    <header>
       <nav class="header">
+        <ul class="header__list">
+          <a href="#home">
+            <li class="header__list--about">inicio</li>
+          </a>
+          <a href="#aboutMe">
+            <li class="header__list--about">Sobre mí</li>
+          </a>
+          <a href="#projects">
+            <li class="header__list--projects">Proyectos</li>
+          </a>
+          <a href="#tech">
+            <li class="header__list--tech">Tecnologías</li>
+          </a>
+        </ul>
+        <ul class="header__redes">
+          <a class="header__redes--cv" href="./assets/downloads/CV-CristinaRodriguez-FullStack.pdf"
+            download="CV-CristinaRodriguez.pdf">CV</a>
+          <a href="https://www.linkedin.com/in/cristinarodriguezgar" target="_blank">
+            <li><i class="fa-brands fa-linkedin header__redes--linkedin"></i></li>
+          </a>
+          <a href="https://github.com/crisrodriguezgar" target="_blank">
+            <li><i class="fa-brands fa-github-alt header__redes--git"></i></li>
+          </a>
+        </ul>
         <label class="hamburger">
           <input type="checkbox">
           <svg viewBox="0 0 32 32">
-            <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+            <path class="line line-top-bottom"
+              d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+            </path>
             <path class="line" d="M7 16 27 16"></path>
           </svg>
         </label>
-        <ul class="header__list">
-          <a href="#home"><li class="header__list--about">inicio</li></a>
-          <a href="#aboutMe"><li class="header__list--about">Sobre mí</li></a>
-          <a href="#projects"><li class="header__list--projects">Proyectos</li></a>
-          <a href="#tech"><li class="header__list--tech">Tecnologías</li></a>
+      </nav>
+      <nav class="headerH">
+        <ul class="headerH__hamb">
+          <a href="#home">
+            <li class="header__hamb--about">inicio</li>
+          </a>
+          <a href="#aboutMe">
+            <li class="headerH__hamb--about">Sobre mí</li>
+          </a>
+          <a href="#projects">
+            <li class="headerH__hamb--projects">Proyectos</li>
+          </a>
+          <a href="#tech">
+            <li class="headerH__hamb--tech">Tecnologías</li>
+          </a>
         </ul>
-        <ul class="header__redes">
-          <a class="header__redes--cv" href="./assets/downloads/CV-CristinaRodriguez-FullStack.pdf" download="CV-CristinaRodriguez.pdf">CV</a>
-          <a href="https://www.linkedin.com/in/cristinarodriguezgar" target="_blank"
-            ><li><i class="fa-brands fa-linkedin header__redes--linkedin"></i></li
-          ></a>
-          <a href="https://github.com/crisrodriguezgar" target="_blank"
-            ><li><i class="fa-brands fa-github-alt header__redes--git"></i></li
-          ></a>
+        <ul class="headerH__hambRedes">
+          <a class="headerH__hambRedes--cv" href="./assets/downloads/CV-CristinaRodriguez-FullStack.pdf"
+            download="CV-CristinaRodriguez.pdf">CV</a>
+          <a href="https://www.linkedin.com/in/cristinarodriguezgar" target="_blank">
+            <li><i class="fa-brands fa-linkedin headerH__hambRedes--linkedin"></i></li>
+          </a>
+          <a href="https://github.com/crisrodriguezgar" target="_blank">
+            <li><i class="fa-brands fa-github-alt headerH__hambRedes--git"></i></li>
+          </a>
         </ul>
       </nav>
     </header>
-
     <main>
       <section class="sectionHome" id="home">
 
