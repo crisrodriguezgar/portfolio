@@ -29,6 +29,13 @@
     "dest": "public/assets/js/",
     "dist": "docs/assets/js/"
   },
+  "downloads": {
+    "src": [
+      "src/downloads/**/*.pdf"
+    ],
+    "dest": "public/assets/downloads/",
+    "dist": "docs/assets/downloads/"
+  },
   "images": {
     "src": "src/images/**/*.{gif,jpg,jpeg,JPG,JPEG,png,svg}",
     "dest": "public/assets/images/",

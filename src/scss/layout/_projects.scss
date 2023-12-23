@@ -3,7 +3,6 @@
   @include center-column;
   background-color: $backgroundM;
   position: relative;
-  
 }
 .titleProjects {
   padding-block: 2rem;
@@ -14,7 +13,7 @@
   }
 }
 
-.box{
+.box {
   //@include padding (3rem,3rem);
   padding-bottom: 2.5rem;
   @include center-column;
@@ -39,15 +38,31 @@
   &__img {
     @include size(20rem, 14rem);
     margin: 2.3rem;
+    transition: 0.8s;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.08);
+    }
   }
   &__tech {
     @include font($montserrat, 1.3rem, $highlightedText2, 300);
     @include padding(1.5rem, 1rem);
   }
-  &__iconProject{
-    @include icon (2rem, $highlightedText2);
+  &__iconProject {
+    @include icon(2rem, $highlightedText2);
     margin-inline: 1.5rem;
     margin-block: 1.5rem;
     cursor: pointer;
+    transition: 0.8s;
+    &:hover {
+      color: $backgroundM;
+    }
   }
+  &__git {
+    @include font($montserrat, 1.3rem, $highlightedText2, 300);
+    cursor: pointer;
+  }
+}
+.divGit{
+  display: flex;
 }
