@@ -123,6 +123,14 @@ gulp.task(
   })
 );
 
+gulp.task('downloads-dist', done => {
+  gulp
+    .src(config.downloads.src) // Ruta de origen de los archivos que quieres mover a 'downloads'
+    .pipe(plumber({ errorHandler: notify.onError('Error: <%= error.message %>') }))
+    .pipe(gulp.dest(config.downloads.dist)); // Ruta de destino: la carpeta 'downloads' en 'docs'
+  done();
+});
+
 gulp.task(
   'docs',
   gulp.series(
@@ -132,7 +140,8 @@ gulp.task(
       'css-dist',
       'html-dist',
       'js-dist',
-      'images-dist'
+      'images-dist',
+      'downloads-dist',
       // 'icons-dist'
     ],
     done => done()
