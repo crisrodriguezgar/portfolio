@@ -35,9 +35,13 @@
 
     @media (min-width: 768px) {
       font-size: 1.6rem;
-      @include padding(20rem, 0.5rem);
+      @include padding(10rem, 0.5rem);
       line-height: 3.2rem;
     }
+    @media (min-width: 1024px) {
+      @include padding(20rem, 0.5rem);
+    }
+
     &--box {
       display: flex;
       flex-direction: column;
