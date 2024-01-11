@@ -4,6 +4,7 @@
   @include center-column;
   align-items: center;
   background-color: $backgroundM;
+  
   @media (min-width: 2560px) {
     padding-bottom: 10rem;
   }
