@@ -1,69 +1,288 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-    
-    <link rel="icon" href="./images/favicon.png" />
-    <link rel="stylesheet" href="./assets/main-62015576.css">
-  </head>
 
-  <body>
-    <div class="page">
-      <header class="page__header">
-  <img src="./images/logo-adalab.png" alt="Adalab">
-  <h1>Bienvenidos a Adalab</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio Cristina Rodriguez</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+  
+  <link rel="icon" href="./assets/mancha-9756b27d.png" />
+  <script src="https://kit.fontawesome.com/d65782632e.js" crossorigin="anonymous"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/index-e9b1e932.css">
+</head>
+
+<body>
+  <header>
+  <nav class="header">
+    <ul class="header__list">
+      <a href="#home">
+        <li class="header__list--about">inicio</li>
+      </a>
+      <a href="#aboutMe">
+        <li class="header__list--about">Sobre mí</li>
+      </a>
+      <a href="#projects">
+        <li class="header__list--projects">Proyectos</li>
+      </a>
+      <a href="#tech">
+        <li class="header__list--tech">Tecnologías</li>
+      </a>
+    </ul>
+    <ul class="header__redes">
+      <a class="header__redes--cv" href="./downloads/CV-CristinaRodriguez-FrontEnd.pdf"
+        download="CV-CristinaRodriguez-Frontend.pdf">
+        CV</a>
+      <a href="https://www.linkedin.com/in/cristinarodriguezgar" target="_blank">
+        <li><i class="fa-brands fa-linkedin header__redes--linkedin"></i></li>
+      </a>
+      <a href="https://github.com/crisrodriguezgar" target="_blank">
+        <li><i class="fa-brands fa-github-alt header__redes--git"></i></li>
+      </a>
+    </ul>
 </header>
 
-      <main class="page__main">
-  <h2>Este es el starter kit de Adalab</h2>
-  <p>Lo usamos para aprender:</p>
-  <ul class="main__list">
-    <li>Sass</li>
-    <li>HTML partials</li>
-    <li>Gulp</li>
-    <li>y muchas cosas más</li>
-  </ul>
-  <p>Si quieres saber cúales son las rutas correctas para:</p>
-  <ul class="main__list">
-    <li>
-      una <code class="code">&lt;img /&gt;</code> mira el fichero
-      <code class="code">./src/html/partials/header.html</code>.
-    </li>
-    <li>
-      y para un <code class="code">background-image</code> mira el fichero
-      <code class="code">./src/html/scss/layout/_page.scss</code>.
-    </li>
-  </ul>
-  <p>
-    Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-    <code class="code">./src/html/index.html</code> y
-    <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-    enlaces:
-  </p>
-  <ul class="main__list">
-    <li>
-      <a class="link__adalab" href="https://adalab.es">Adalab</a>
 
-    </li>
-    <li>
-      <a class="{=$aClass}" href="./more-info.html">Más info del starter kit</a>
+<div class="containerHamb">
+  <div class="hamb">
+    <div>
+      <label class="hamburger">
+        <input type="checkbox" class="js-hamburger">
+        <svg viewBox="0 0 32 32">
+          <path class="line line-top-bottom"
+            d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+          </path>
+          <path class="line" d="M7 16 27 16"></path>
+        </svg>
+      </label>
+    </div>
+    <div class="hello hidden js-menuH">
+      <div class="headerH">
+        <ul>
+          <a href="#home">
+            <li class="headerH__textH">inicio</li>
+          </a>
+          <a href="#aboutMe">
+            <li class="headerH__textH">Sobre mí</li>
+          </a>
+          <a href="#projects">
+            <li class="headerH__textH">Proyectos</li>
+          </a>
+          <a href="#tech">
+            <li class="headerH__textH">Tecnologías</li>
+          </a>
+        </ul>
+        <ul>
+          <a class="headerH__hambRedes" href="./downloads/CV-CristinaRodriguez-FrontEnd.pdf"
+            download="CV-CristinaRodriguez.pdf">CV</a>
+          <a href="https://www.linkedin.com/in/cristinarodriguezgar" target="_blank">
+            <li><i class="fa-brands fa-linkedin headerH__hambRedes"></i></li>
+          </a>
+          <a href="https://github.com/crisrodriguezgar" target="_blank">
+            <li><i class="fa-brands fa-github-alt headerH__hambRedes"></i></li>
+          </a>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-    </li>
-  </ul>
-</main>
+</div>
+  <main>
+    <section class="sectionHome" id="home">
 
-      <footer class="page__footer">
-  <small>
-    &copy; Todos los derechos reservados
-    <a class="link__adalab" href="https://adalab.es">Adalab</a>
+    <div class="imgHome">
+        <img class="imgHome__stain" src="./assets/mancha-9756b27d.png" alt="">
+        <img class="imgHome__photo" src="./assets/cv-7100e82b.png" alt="foto de cris">
+    </div>
+    <div class="textHome">
+        <h2 class="subtitleHome">¡Hola! mi nombre es</h2>
+        <h1 class="titleHome">Cristina Rodríguez</h1>
+        <p class="subtitleFront">&lt;Junior Front-end Developer/&gt;</p>
+    </div>
 
-  </small>
+    <div id="aboutMe">
+        <svg class="vibe" viewBox="0 0 1200 110">
+            <path
+                d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                class="shape-fill"></path>
+        </svg>
+    </div>
+</section>
+    <section class="sectionAbout">
+    <div class="stain">
+        <h2 class="stain__titleAbout">sobre mí</h2><img class="stain__img" src="./assets/mancha-9756b27d.png"
+            alt="icono de mancha">
+    </div>
+
+    <article class="container">
+        <p class="container__text">
+            Nunca se me ha dado bien describirme, pero aquí estoy, <b>intentando que me conozcas un poquito</b>.
+        </p>
+        <div class="container__text--box">
+
+            <p class="container__text">
+                Desde pequeña he transmitido mis sentimientos y pensamientos a través de
+                la pintura. Cuando fui creciendo pensé que podría estar bien estudiar lo
+                que sentían los antiguos artistas como Leonardo Da Vinci. Y así fue como acabé estudiando <b> Historia
+                    del
+                    Arte</b>. Una
+                carrera que disfruté como una enana y fui muy feliz estudiándola.
+            </p>
+            <div><img class="container__img" src="./assets/lienzo-4f8e78e0.png" /><img class="container__img"
+                    src="./assets/obras-de-arte-c3dc1106.png" /></div>
+        </div>
+        <p class="container__text" id="projects">
+            Decidí dar un giro radical a mi vida con un bootcamp de <b>programación web</b>.
+            Este cambio ha sido una aventura desafiante, como subir al pico más alto. Me he encontrado piedras por el
+            camino,
+            pero estoy muy orgullosa de conseguirlo, y haber llegado a la cima. Mi pasión por el arte
+            se fusiona con la <b>creatividad y la lógica</b> del desarrollo web. Soy <b>proactiva</b>, con <b>ojo al
+                detalle</b>, <b>paciente</b>, me gusta <b>trabajar en equipo</b> y estoy <b>comprometida</b> a superarme
+            día a
+            día.
+        </p>
+    </article>
+</section>
+    <section class="sectionProjects">
+    <h2 class="titleProjects">proyectos</h2>
+
+    <div class="box">
+        <div class="card">
+            <a href="https://crisrodriguezgar.github.io/hangman-game/" target="_blank"><img class="card__img"
+                    src="./assets/desktop-ahorcado-702623d3.png" alt="proyecto ahorcado" /></a>
+            <h3 class="card__title">Juego del Ahorcado</h3>
+            <p class="card__tech">HTML | SCSS | REACT</p>
+            <div class="gitHub"><a class="gitHub__link" href="https://github.com/crisrodriguezgar/hangman-game"
+                    target="_blank"><i class="fa-brands fa-github-alt gitHub__iconProject"></i>
+                    <p class="gitHub__textProject">Ver en GitHub</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="https://crisrodriguezgar.github.io/piedra-papel-tijeras/" target="_blank"><img class="card__img"
+                    src="./assets/desktop-piedra-3aac1d67.png" alt="proyecto piedra papel o tijera" /></a>
+            <h3 class="card__title">Juego Piedra, papel o tijera</h3>
+            <p class="card__tech">HTML | SCSS | JavaScript</p>
+            <div class="gitHub"><a class="gitHub__link" href="https://github.com/crisrodriguezgar/piedra-papel-tijeras"
+                    target="_blank"><i class="fa-brands fa-github-alt gitHub__iconProject"></i>
+                    <p class="gitHub__textProject">Ver en GitHub</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="https://crisrodriguezgar.github.io/memory-art/" target="_blank"><img class="card__img"
+                    src="./assets/desktop-memory-f17fbfa0.png" alt="proyecto memory art" /></a>
+            <h3 class="card__title">Juego Memory Art</h3>
+            <p class="card__tech">HTML | SCSS | JavaScript</p>
+
+            <div class="gitHub"><a class="gitHub__link" href="https://github.com/crisrodriguezgar/memory-art"
+                    target="_blank"><i class="fa-brands fa-github-alt gitHub__iconProject"></i>
+                    <p class="gitHub__textProject">Ver en GitHub</p>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <a href="https://crisrodriguezgar.github.io/owen-wilson/" target="_blank"><img class="card__img"
+                    src="./assets/desktop-owen-fba4f829.png" alt="proyecto Owen Wilson" /></a>
+            <h3 class="card__title">Owen Wilson Woow!</h3>
+            <p class="card__tech">HTML | SCSS | REACT</p>
+
+            <div class="gitHub"><a class="gitHub__link" href="https://github.com/crisrodriguezgar/owen-wilson"
+                    target="_blank"><i class="fa-brands fa-github-alt gitHub__iconProject"></i>
+                    <p class="gitHub__textProject">Ver en GitHub</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="https://proyectos-magicos.onrender.com/#/" target="_blank" rel="noopener noreferrer"><img
+                    class="card__img" src="./assets/desktop-magicos-61dc7332.png" alt="proyectos mágicos" /></a>
+            <h3 class="card__title">Proyectos mágicos</h3>
+            <p class="card__tech">HTML | SCSS | REACT | MySQL</p>
+
+            <div class="gitHub"><a class="gitHub__link" href="https://github.com/crisrodriguezgar/proyectos-magicos"
+                    target="_blank"><i class="fa-brands fa-github-alt gitHub__iconProject"></i>
+                    <p class="gitHub__textProject">Ver en GitHub</p>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <a href="https://crisrodriguezgar.github.io/awesome-profile-cards/" target="_blank"
+                rel="noopener noreferrer"><img class="card__img" src="./assets/desktop-awesome-327a9d18.png"
+                    alt="Proyecto The awesome profile cards" /></a>
+            <h3 class="card__title">The Awesome Profile-cards</h3>
+            <p class="card__tech">HTML | SCSS | JavaScript</p>
+
+            <div class="gitHub"><a class="gitHub__link" href="https://github.com/crisrodriguezgar/awesome-profile-cards"
+                    target="_blank"><i class="fa-brands fa-github-alt gitHub__iconProject"></i>
+                    <p class="gitHub__textProject">Ver en GitHub</p>
+                </a>
+            </div>
+        </div>
+
+</section>
+    <section class="sectionTech" id="tech">
+  <div class="stain">
+    <img class="stain__img" src="./assets/mancha-9756b27d.png" alt="icono de mancha">
+    <h2 class="stain__titleAbout">tecnologías</h2>
+  </div>
+  <div class="containerTech">
+    <i class="fa-brands fa-html5 containerTech__iconTech"></i>
+    <i class="fa-brands fa-css3-alt containerTech__iconTech"></i>
+    <i class="fa-brands fa-square-js containerTech__iconTech"></i>
+    <i class="fa-brands fa-sass containerTech__iconTech"></i>
+    <i class="fa-brands fa-react containerTech__iconTech"></i>
+    <i class="fa-solid fa-database containerTech__iconTech"></i>
+    <i class="fa-brands fa-node-js containerTech__iconTech"></i>
+    <i class="fa-brands fa-git-alt containerTech__iconTech"></i>
+    <i class="fa-brands fa-figma containerTech__iconTech"></i>
+
+  </div>
+  <svg class="bicho3" viewBox="0 0 1200 110">
+    <path
+      d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+      class="shape-fill"></path>
+  </svg>
+</section>
+  </main>
+  <footer class="footer">
+  <div>
+    <ul class="footer__list">
+      <a href="#home">
+        <li class="footer__list--about">Inicio</li>
+      </a>
+      <a href="#aboutMe">
+        <li class="footer__list--about">Sobre mí</li>
+      </a>
+      <a href="#projects">
+        <li class="footer__list--projects">Proyectos</li>
+      </a>
+      <a href="#tech">
+        <li class="footer__list--tech">Tecnologías</li>
+      </a>
+    </ul>
+  </div>
+  <div class="copy">
+    <p>© crisrodriguezgar 2023</p>
+    <div>
+      <a href="https://www.linkedin.com/in/cristinarodriguezgar" target="_blank"><i
+          class="fa-brands fa-linkedin linkedin"></i></a>
+      <a href="https://github.com/crisrodriguezgar" target="_blank"><i class="fa-brands fa-github-alt git"></i></a>
+    </div>
+
+  </div>
 </footer>
 
-    </div>
-    <script src="./js/main.js"></script>
-  </body>
+  <script src="./js/main.js"></script>
+</body>
+
 </html>
