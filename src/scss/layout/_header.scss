@@ -40,7 +40,7 @@
       &--linkedin,
       &--git,
       &--cv {
-        @include font($montserrat, 2.2rem, $highlightedText2, bold);
+        @include font(0, 2.2rem, $highlightedText2, 0);
         transition: 0.8s;
         &:hover {
           transform: scale(1.1);
@@ -134,12 +134,12 @@
   &__hredes{
     display: flex;
     margin-right: 4rem;
+    align-items: center
   }
   &__hambRedes {
     @include font($montserrat, 2.3rem, $subtitle, bold);
     margin: 1.5rem;
     color: $highlightedText2;
-    margin-right: 4.5rem;
     margin-top: 1.5rem;
   }
 }
