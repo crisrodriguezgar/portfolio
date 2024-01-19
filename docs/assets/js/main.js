@@ -1,1 +1,0 @@
-"use strict";console.log("holis");const hamburger=document.querySelector(".js-hamburger"),menu=document.querySelector(".js-menuH"),infoH=document.querySelector(".js-infoHang"),handleInput=()=>{menu.classList.toggle("hidden")};hamburger.addEventListener("click",handleInput);

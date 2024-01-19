@@ -1,10 +1,9 @@
 @mixin font($family, $size, $color, $weight) {
-    font-family: $family;
-    font-size: $size;
-    color: $color;
-    font-weight: $weight;
-  }
-  
+  font-family: $family;
+  font-size: $size;
+  color: $color;
+  font-weight: $weight;
+}
 
 @mixin icon($fontSize, $color) {
   font-size: $fontSize;

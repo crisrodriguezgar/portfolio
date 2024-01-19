@@ -4,7 +4,7 @@
   @include center-column;
   align-items: center;
   background-color: $backgroundM;
-  
+
   @media (min-width: 1700px) {
     padding-bottom: 10rem;
   }
@@ -33,7 +33,7 @@
   }
 }
 .bicho3 {
-  background-color:$backgroundM;
+  background-color: $backgroundM;
   fill: $backgroundMClaro;
   position: absolute;
   bottom: 0;
