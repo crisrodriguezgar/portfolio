@@ -6,7 +6,7 @@
   opacity: 90%;
   background-color: $backgroundH;
   display: flex;
-  justify-content: space-between; /* Para distribuir los elementos horizontalmente */
+  justify-content: space-around;
   align-items: center;
   &__list {
     display: none;
