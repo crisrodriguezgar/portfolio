@@ -16,3 +16,16 @@ a {
   text-decoration: none;
   color: $white;
 }
+
+body::-webkit-scrollbar{
+  width: 13px;
+}
+
+body::-webkit-scrollbar-thumb{
+  background-color: #cfd1d3;
+  border-radius: 0.8rem;
+  transition-duration: 0.8s;
+}
+body::-webkit-scrollbar-thumb:hover{
+  background-color: $highlightedText2;
+}

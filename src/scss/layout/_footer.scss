@@ -8,7 +8,7 @@
     display: flex;
     padding-bottom: 2rem;
     gap: 2rem;
-    @include font($montserrat, 1.5rem, $highlightedText2, bold);
+    @include font($montserrat, 1.5rem, $highlightedText2, 400);
     align-items: center;
     justify-content: center;
     flex-direction: column;
