@@ -21,6 +21,9 @@
   @media (min-width: 768px) {
     flex-direction: row;
     flex-wrap: wrap;
+    padding-inline: 10rem;
+  }
+  @media (min-width: 1024px) {
     padding-inline: 25rem;
   }
 }
