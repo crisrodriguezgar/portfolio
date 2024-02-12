@@ -8,8 +8,10 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  &__list {
+
+  &__list{
     display: none;
+
     @media (min-width: 768px) {
       display: flex;
       padding: 2rem;
@@ -40,7 +42,7 @@
       &--linkedin,
       &--git,
       &--cv {
-        @include font(0, 2.2rem, $highlightedText2, 0);
+        @include font($montserrat, 2.2rem, $highlightedText2, 0);
         transition: 0.8s;
         &:hover {
           transform: scale(1.1);
