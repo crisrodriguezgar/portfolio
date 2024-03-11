@@ -46,12 +46,15 @@
       &--linkedin,
       &--git,
       &--cv {
-        @include font(0, 2.2rem, $highlightedText2, bold);
+        @include font(0, 2.2rem, $highlightedText2, 0);
         transition: 0.8s;
         &:hover {
           transform: scale(1.1);
           color: $subtitle;
         }
+      }
+      &--cv {
+        @include font($montserrat, 2.2rem, $highlightedText2, bold);
       }
     }
   }

@@ -1,9 +1,9 @@
 {
   "header": {
-    "home": "inicio",
-    "aboutMe": " sobre mí",
-    "projects": "proyectos",
-    "tech": "tecnologías"
+    "home": "Inicio",
+    "aboutMe": " Sobre mí",
+    "projects": "Proyectos",
+    "tech": "Tecnologías"
   },
   "home": {
     "welcome": "¡Hola!, mi nombre es",

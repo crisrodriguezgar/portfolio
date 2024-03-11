@@ -1,9 +1,9 @@
 {
   "header": {
-    "home": "home",
-    "aboutMe": " about me",
-    "projects": "projects",
-    "tech": "technologies"
+    "home": "Home",
+    "aboutMe": " About me",
+    "projects": "Projects",
+    "tech": "Technologies"
   },
   "home": {
     "welcome": "Hi!, my name is",
