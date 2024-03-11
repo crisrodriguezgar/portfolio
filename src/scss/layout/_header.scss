@@ -8,17 +8,20 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+
   &__list {
     display: none;
+
     @media (min-width: 768px) {
       display: flex;
       padding: 2rem;
       gap: 2rem;
       @include font($montserrat, 1.5rem, $subtitle, bold);
       align-items: center;
+      
       &--about,
       &--projects,
-      &--tech {
+      &--tech{
         transition: 0.8s;
         cursor: pointer;
         color: $subtitle;
@@ -29,18 +32,21 @@
       }
     }
   }
+
   &__redes {
     display: none;
+
     @media (min-width: 768px) {
       display: flex;
       gap: 2rem;
       padding: 2rem;
       margin-inline: 4rem;
       align-items: center;
+
       &--linkedin,
       &--git,
       &--cv {
-        @include font(0, 2.2rem, $highlightedText2, 0);
+        @include font($montserrat, 2.2rem, $highlightedText2, bold);
         transition: 0.8s;
         &:hover {
           transform: scale(1.1);
@@ -60,8 +66,8 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-
   @include padding(0.5rem, 2rem);
+
   @media (min-width: 768px) {
     display: none !important;
   }
@@ -123,19 +129,23 @@
   z-index: 5;
   text-transform: uppercase;
   padding-top: 2.5rem;
+
   @media (min-width: 768px) {
     display: none;
   }
+
   &__textH {
     @include font($montserrat, 1.5rem, $subtitle, bold);
     margin-right: 4rem;
     margin-bottom: 2.5rem;
   }
+
   &__hredes{
     display: flex;
     margin-right: 4rem;
     align-items: center
   }
+
   &__hambRedes {
     @include font($montserrat, 2.3rem, $subtitle, bold);
     margin: 1.5rem;
@@ -148,6 +158,141 @@
   display: flex;
   flex-direction: row-reverse;
 }
+
 .hidden {
   display: none;
+}
+
+/// Input language
+
+.cl-toggle-switch {
+  position: relative;
+  margin-right: 1rem;
+  
+}
+
+.cl-switch {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+
+  // Input
+  > input {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    z-index: -1;
+    position: absolute;
+    right: 6px;
+    top: -8px;
+    display: block;
+    margin: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.38);
+    outline: none;
+    opacity: 0;
+    transform: scale(1);
+    pointer-events: none;
+    transition: opacity 0.3s 0.1s, transform 0.2s 0.1s;
+  }
+
+  // Track
+  > span::before {
+    content: "";
+    display: inline-block;
+    margin: 5px 0 5px 10px;
+    border-radius: 7px;
+    width: 36px;
+    height: 14px;
+    background-color: rgba(0, 0, 0, 0.38);
+    vertical-align: top;
+    transition: background-color 0.2s, opacity 0.2s;
+  }
+
+  // Thumb
+  > span::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: 16px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    transition: background-color 0.2s, transform 0.2s;
+  }
+
+  // Checked
+  > input:checked {
+    right: -10px;
+    background-color: #85b8b7;
+  }
+
+  > input:checked + span::before {
+    background-color: $backgroundM;
+  }
+
+  > input:checked + span::after {
+    background-color: $button1;
+    transform: translateX(16px);
+  }
+
+  // Hover, Focus
+  &:hover > input {
+    opacity: 0.04;
+  }
+
+  > input:focus {
+    opacity: 0.12;
+  }
+
+  &:hover > input:focus {
+    opacity: 0.16;
+  }
+
+  // Active
+  > input:active {
+    opacity: 1;
+    transform: scale(0);
+    transition: transform 0s, opacity 0s;
+  }
+
+  > input:active + span::before {
+    background-color: #8f8f8f;
+  }
+
+  > input:checked:active + span::before {
+    background-color: #85b8b7;
+  }
+
+  // Disabled
+  > input:disabled {
+    opacity: 0;
+  }
+
+  > input:disabled + span::before {
+    background-color: #ddd;
+  }
+
+  > input:checked:disabled + span::before {
+    background-color: #bfdbda;
+  }
+
+  > input:checked:disabled + span::after {
+    background-color: #61b5b4;
+  }
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  @include font($montserrat, 1.2rem, $highlightedText2, 0);
+}
+
+.languageH{
+  margin-top: 3.5rem;
+  margin-right: 4rem;
 }

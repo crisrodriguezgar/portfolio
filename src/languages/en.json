@@ -1,0 +1,25 @@
+{
+  "header": {
+    "home": "home",
+    "aboutMe": " about me",
+    "projects": "projects",
+    "tech": "technologies"
+  },
+  "home": {
+    "welcome": "Hi!, my name is",
+    "rol": "&lt;Junior Front-end  Developer/&gt;"
+  },
+  "aboutMe": {
+    "description": "I've never been good at describing myself, but here I am, <b>trying to let you know me a little</b>.",
+    "description2": "Since I was little I have transmitted my feelings and thoughts through painting. As I grew older, I thought it would be interesting to study what ancient artists like Leonardo Da Vinci felt. And that's how I ended up studying <b>Art History</b>. A career that I enjoyed like a dwarf and I was very happy studying it.",
+    "description3": "I decided to take a radical turn in my life towards the world of <b>web programming</b>. This change has been a challenging adventure, like climbing the highest peak. I have encountered rocks along the way, but I am very proud of achieving it and having reached the top. But I still have many peaks to reach. My passion for art merges with the <b>creativity and logic</b> of web development. I am <b>proactive</b>, detail-oriented, <b>patient</b>, I like to <b>work as a team</b> and I am <b>committed</b> to improving myself day by day."
+  },
+
+  "projects": {
+    "gameMemory": "Art memory game",
+    "game":"Rock, paiper, scissors ",
+    "hanged": "Hangman game",
+    "magic": "Magic Projects",
+    "see": "View on Github"
+  }
+}

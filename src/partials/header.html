@@ -2,31 +2,56 @@
   <nav class="header">
     <ul class="header__list">
       <a href="#home">
-        <li class="header__list--about">inicio</li>
+        <li class="header__list--about" data-section="header" data-value="home">inicio</li>
       </a>
       <a href="#aboutMe">
-        <li class="header__list--about">Sobre mí</li>
+        <li class="header__list--about" data-section="header" data-value="aboutMe">Sobre mí</li>
       </a>
       <a href="#projects">
-        <li class="header__list--projects">Proyectos</li>
+        <li class="header__list--projects" data-section="header" data-value="projects">Proyectos</li>
       </a>
       <a href="#tech">
-        <li class="header__list--tech">Tecnologías</li>
+        <li class="header__list--tech" data-section="header" data-value="tech">Tecnologías</li>
       </a>
     </ul>
+
+
     <ul class="header__redes">
-      <!-- <a class="header__redes--cv" href="./downloads/CV-CristinaRodriguez-FrontEnd.pdf"
+
+      <!-- cv -->
+
+      <a class="header__redes--cv" href="./CV-CristinaRodriguez-FrontEnd.pdf"
         download="CV-CristinaRodriguez-FrontEnd.pdf">
-        CV</a> -->
+        CV</a>
+
+
+      <!-- icons -->
+
       <a href="https://www.linkedin.com/in/cristinarodriguezgar" target="_blank">
         <li><i class="fa-brands fa-linkedin header__redes--linkedin"></i></li>
       </a>
       <a href="https://github.com/crisrodriguezgar" target="_blank">
         <li><i class="fa-brands fa-github-alt header__redes--git"></i></li>
       </a>
+
+
+      <!-- language -->
+
+      <div id="flags" class="language">
+        <p data-language="es">ES</p>
+        <div class="cl-toggle-switch">
+          <label class="cl-switch js-input">
+            <input id="languageSwitch" type="checkbox">
+            <span></span>
+          </label>
+        </div>
+        <p data-language="en">EN</p>
+      </div>
     </ul>
 </header>
 
+
+<!-- mobile hamburguer -->
 
 <div class="containerHamb">
   <div class="hamb">
@@ -45,27 +70,40 @@
       <div class="headerH">
         <ul>
           <a href="#home">
-            <li class="headerH__textH">inicio</li>
+            <li class="headerH__textH" data-section="header" data-value="home">inicio</li>
           </a>
           <a href="#aboutMe">
-            <li class="headerH__textH">Sobre mí</li>
+            <li class="headerH__textH" data-section="header" data-value="aboutMe">Sobre mí</li>
           </a>
           <a href="#projects">
-            <li class="headerH__textH">Proyectos</li>
+            <li class="headerH__textH" data-section="header" data-value="projects">Proyectos</li>
           </a>
           <a href="#tech">
-            <li class="headerH__textH">Tecnologías</li>
+            <li class="headerH__textH" data-section="header" data-value="tech">Tecnologías</li>
           </a>
         </ul>
         <ul class="headerH__hredes">
-          <!-- <div>
-          <a class="headerH__hambRedes" href="/downloads/CV-CristinaRodriguez-FrontEnd.pdf"
-            download="CV-CristinaRodriguez.pdf">CV</a></div> -->
+          <div>
+          <a class="headerH__hambRedes" href="./CV-CristinaRodriguez-FrontEnd.pdf"
+            download="CV-CristinaRodriguez.pdf">CV</a></div>
           <a href="https://www.linkedin.com/in/cristinarodriguezgar" target="_blank"><i
               class="fa-brands fa-linkedin linkedin"></i></a>
           <a href="https://github.com/crisrodriguezgar" target="_blank"><i class="fa-brands fa-github-alt git"></i></a>
           </li>
         </ul>
+
+        <div id="flags-mobile" class="language languageH">
+          <p data-language="es">ES</p>
+          <div class="cl-toggle-switch">
+            <label class="cl-switch js-input">
+              <input id="languageSwitch" type="checkbox">
+              <span></span>
+            </label>
+          </div>
+          <p data-language="en">EN</p>
+        </div>
+
+
       </div>
     </div>
   </div>
