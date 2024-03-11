@@ -12,7 +12,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="./assets/index-69bbe8bf.css">
+  <link rel="stylesheet" href="./assets/index-a1987828.css">
 </head>
 
 <body>
@@ -20,31 +20,56 @@
   <nav class="header">
     <ul class="header__list">
       <a href="#home">
-        <li class="header__list--about">inicio</li>
+        <li class="header__list--about" data-section="header" data-value="home">inicio</li>
       </a>
       <a href="#aboutMe">
-        <li class="header__list--about">Sobre mí</li>
+        <li class="header__list--about" data-section="header" data-value="aboutMe">Sobre mí</li>
       </a>
       <a href="#projects">
-        <li class="header__list--projects">Proyectos</li>
+        <li class="header__list--projects" data-section="header" data-value="projects">Proyectos</li>
       </a>
       <a href="#tech">
-        <li class="header__list--tech">Tecnologías</li>
+        <li class="header__list--tech" data-section="header" data-value="tech">Tecnologías</li>
       </a>
     </ul>
+
+
     <ul class="header__redes">
-      <!-- <a class="header__redes--cv" href="./downloads/CV-CristinaRodriguez-FrontEnd.pdf"
+
+      <!-- cv -->
+
+      <a class="header__redes--cv" href="./CV-CristinaRodriguez-FrontEnd.pdf"
         download="CV-CristinaRodriguez-FrontEnd.pdf">
-        CV</a> -->
+        CV</a>
+
+
+      <!-- icons -->
+
       <a href="https://www.linkedin.com/in/cristinarodriguezgar" target="_blank">
         <li><i class="fa-brands fa-linkedin header__redes--linkedin"></i></li>
       </a>
       <a href="https://github.com/crisrodriguezgar" target="_blank">
         <li><i class="fa-brands fa-github-alt header__redes--git"></i></li>
       </a>
+
+
+      <!-- language -->
+
+      <div id="flags" class="language">
+        <p data-language="es">ES</p>
+        <div class="cl-toggle-switch">
+          <label class="cl-switch js-input">
+            <input id="languageSwitch" type="checkbox">
+            <span></span>
+          </label>
+        </div>
+        <p data-language="en">EN</p>
+      </div>
     </ul>
 </header>
 
+
+<!-- mobile hamburguer -->
 
 <div class="containerHamb">
   <div class="hamb">
@@ -63,27 +88,40 @@
       <div class="headerH">
         <ul>
           <a href="#home">
-            <li class="headerH__textH">inicio</li>
+            <li class="headerH__textH" data-section="header" data-value="home">inicio</li>
           </a>
           <a href="#aboutMe">
-            <li class="headerH__textH">Sobre mí</li>
+            <li class="headerH__textH" data-section="header" data-value="aboutMe">Sobre mí</li>
           </a>
           <a href="#projects">
-            <li class="headerH__textH">Proyectos</li>
+            <li class="headerH__textH" data-section="header" data-value="projects">Proyectos</li>
           </a>
           <a href="#tech">
-            <li class="headerH__textH">Tecnologías</li>
+            <li class="headerH__textH" data-section="header" data-value="tech">Tecnologías</li>
           </a>
         </ul>
         <ul class="headerH__hredes">
-          <!-- <div>
-          <a class="headerH__hambRedes" href="/downloads/CV-CristinaRodriguez-FrontEnd.pdf"
-            download="CV-CristinaRodriguez.pdf">CV</a></div> -->
+          <div>
+          <a class="headerH__hambRedes" href="./CV-CristinaRodriguez-FrontEnd.pdf"
+            download="CV-CristinaRodriguez.pdf">CV</a></div>
           <a href="https://www.linkedin.com/in/cristinarodriguezgar" target="_blank"><i
               class="fa-brands fa-linkedin linkedin"></i></a>
           <a href="https://github.com/crisrodriguezgar" target="_blank"><i class="fa-brands fa-github-alt git"></i></a>
           </li>
         </ul>
+
+        <div id="flags-mobile" class="language languageH">
+          <p data-language="es">ES</p>
+          <div class="cl-toggle-switch">
+            <label class="cl-switch js-input">
+              <input id="languageSwitch" type="checkbox">
+              <span></span>
+            </label>
+          </div>
+          <p data-language="en">EN</p>
+        </div>
+
+
       </div>
     </div>
   </div>
@@ -93,13 +131,13 @@
     <section class="sectionHome" id="home">
 
     <div class="imgHome">
-        <img class="imgHome__stain" src="./assets/mancha-9756b27d.png" alt="">
-        <img class="imgHome__photo" src="./assets/cv-7100e82b.png" alt="foto de cris">
+        <img class="imgHome__stain" src="./assets/mancha-9756b27d.png" alt="mancha colorida">
+        <img class="imgHome__photo" src="./assets/cv-7100e82b.png" alt="foto de cristina">
     </div>
     <div class="textHome">
-        <h2 class="subtitleHome">¡Hola! mi nombre es</h2>
+        <h2 class="subtitleHome" data-section="home" data-value="welcome">¡Hola! mi nombre es</h2>
         <h1 class="titleHome">Cristina Rodríguez</h1>
-        <p class="subtitleFront">&lt;Junior Front-end Developer/&gt;</p>
+        <p class="subtitleFront" data-section="home" data-value="rol">&lt;Desarrolladora Front-End Junior/&gt;</p>
     </div>
 
     <div id="aboutMe">
@@ -112,32 +150,31 @@
 </section>
     <section class="sectionAbout">
     <div class="stain">
-        <h2 class="stain__titleAbout">sobre mí</h2><img class="stain__img" src="./assets/mancha-9756b27d.png"
-            alt="icono de mancha">
+        <h2 class="stain__titleAbout" data-section="header" data-value="aboutMe">sobre mí</h2><img class="stain__img"
+            src="./assets/mancha-9756b27d.png" alt="icono de mancha">
     </div>
 
     <article class="container">
-        <p class="container__text">
+        <p class="container__text" data-section="aboutMe" data-value="description">
             Nunca se me ha dado bien describirme, pero aquí estoy, <b>intentando que me conozcas un poquito</b>.
         </p>
         <div class="container__text--box">
 
-            <p class="container__text">
+            <p class="container__text" data-section="aboutMe" data-value="description2">
                 Desde pequeña he transmitido mis sentimientos y pensamientos a través de
                 la pintura. Cuando fui creciendo pensé que podría estar bien estudiar lo
                 que sentían los antiguos artistas como Leonardo Da Vinci. Y así fue como acabé estudiando <b> Historia
-                    del
-                    Arte</b>. Una
-                carrera que disfruté como una enana y fui muy feliz estudiándola.
+                    del Arte</b>. Una carrera que disfruté como una enana y fui muy feliz estudiándola.
             </p>
             <div><img class="container__img" src="./assets/lienzo-4f8e78e0.png" /><img class="container__img"
                     src="./assets/obras-de-arte-c3dc1106.png" /></div>
         </div>
-        <p class="container__text" id="projects">
+        <p class="container__text" id="projects" data-section="aboutMe" data-value="description3">
             Decidí dar un giro radical a mi vida hacia el mundo de la <b>programación web</b>.
             Este cambio ha sido una aventura desafiante, como subir al pico más alto. Me he encontrado piedras por el
             camino,
-            pero estoy muy orgullosa de conseguirlo, y haber llegado a la cima. Pero todavía tengo muchos picos que alcanzar. Mi pasión por el arte
+            pero estoy muy orgullosa de conseguirlo, y haber llegado a la cima. Pero todavía tengo muchos picos que
+            alcanzar. Mi pasión por el arte
             se fusiona con la <b>creatividad y la lógica</b> del desarrollo web. Soy <b>proactiva</b>, con <b>ojo al
                 detalle</b>, <b>paciente</b>, me gusta <b>trabajar en equipo</b> y estoy <b>comprometida</b> a superarme
             día a
@@ -146,7 +183,7 @@
     </article>
 </section>
     <section class="sectionProjects">
-    <h2 class="titleProjects">proyectos</h2>
+    <h2 class="titleProjects" data-section="header" data-value="projects">proyectos</h2>
 
     <div class="box">
         <div class="card">
@@ -156,7 +193,7 @@
             <p class="card__tech">HTML | SCSS | JavaScript</p>
             <div class="gitHub"><a class="gitHub__link" href="https://github.com/WTM-2024-Event/WTMcollaboration"
                     target="_blank"><i class="fa-brands fa-github-alt gitHub__iconProject"></i>
-                    <p class="gitHub__textProject">Ver en GitHub</p>
+                    <p class="gitHub__textProject" data-section="projects" data-value="see">Ver en GitHub</p>
                 </a>
             </div>
         </div>
@@ -165,12 +202,12 @@
         <div class="card">
             <a href="https://crisrodriguezgar.github.io/memory-art/" target="_blank"><img class="card__img"
                     src="./assets/desktop-memory-f17fbfa0.png" alt="proyecto memory art" /></a>
-            <h3 class="card__title">Juego Memory Art</h3>
+            <h3 class="card__title" data-section="projects" data-value="gameMemory">Juego de memoria</h3>
             <p class="card__tech">HTML | SCSS | JavaScript</p>
 
             <div class="gitHub"><a class="gitHub__link" href="https://github.com/crisrodriguezgar/memory-art"
                     target="_blank"><i class="fa-brands fa-github-alt gitHub__iconProject"></i>
-                    <p class="gitHub__textProject">Ver en GitHub</p>
+                    <p class="gitHub__textProject" data-section="projects" data-value="see">Ver en GitHub</p>
                 </a>
             </div>
         </div>
@@ -184,7 +221,7 @@
 
             <div class="gitHub"><a class="gitHub__link" href="https://github.com/crisrodriguezgar/awesome-profile-cards"
                     target="_blank"><i class="fa-brands fa-github-alt gitHub__iconProject"></i>
-                    <p class="gitHub__textProject">Ver en GitHub</p>
+                    <p class="gitHub__textProject" data-section="projects" data-value="see">Ver en GitHub</p>
                 </a>
             </div>
         </div>
@@ -193,11 +230,11 @@
         <div class="card">
             <a href="https://crisrodriguezgar.github.io/piedra-papel-tijeras/" target="_blank"><img class="card__img"
                     src="./assets/desktop-piedra-3aac1d67.png" alt="proyecto piedra papel o tijera" /></a>
-            <h3 class="card__title">Piedra, papel o tijera</h3>
+            <h3 class="card__title" data-section="projects" data-value="game">Piedra, papel o tijera</h3>
             <p class="card__tech">HTML | SCSS | JavaScript</p>
             <div class="gitHub"><a class="gitHub__link" href="https://github.com/crisrodriguezgar/piedra-papel-tijeras"
                     target="_blank"><i class="fa-brands fa-github-alt gitHub__iconProject"></i>
-                    <p class="gitHub__textProject">Ver en GitHub</p>
+                    <p class="gitHub__textProject" data-section="projects" data-value="see">Ver en GitHub</p>
                 </a>
             </div>
         </div>
@@ -205,11 +242,11 @@
         <div class="card">
             <a href="https://crisrodriguezgar.github.io/hangman-game/" target="_blank"><img class="card__img"
                     src="./assets/desktop-ahorcado-702623d3.png" alt="proyecto ahorcado" /></a>
-            <h3 class="card__title">Juego del Ahorcado</h3>
+            <h3 class="card__title" data-section="projects" data-value="hanged">Juego del Ahorcado</h3>
             <p class="card__tech">HTML | SCSS | REACT</p>
             <div class="gitHub"><a class="gitHub__link" href="https://github.com/crisrodriguezgar/hangman-game"
                     target="_blank"><i class="fa-brands fa-github-alt gitHub__iconProject"></i>
-                    <p class="gitHub__textProject">Ver en GitHub</p>
+                    <p class="gitHub__textProject" data-section="projects" data-value="see">Ver en GitHub</p>
                 </a>
             </div>
         </div>
@@ -223,7 +260,7 @@
 
             <div class="gitHub"><a class="gitHub__link" href="https://github.com/crisrodriguezgar/owen-wilson"
                     target="_blank"><i class="fa-brands fa-github-alt gitHub__iconProject"></i>
-                    <p class="gitHub__textProject">Ver en GitHub</p>
+                    <p class="gitHub__textProject" data-section="projects" data-value="see">Ver en GitHub</p>
                 </a>
             </div>
         </div>
@@ -231,12 +268,12 @@
         <div class="card">
             <a href="https://proyectos-magicos.onrender.com/#/" target="_blank" rel="noopener noreferrer"><img
                     class="card__img" src="./assets/desktop-magicos-61dc7332.png" alt="proyectos mágicos" /></a>
-            <h3 class="card__title">Proyectos mágicos</h3>
+            <h3 class="card__title" data-section="projects" data-value="magic">Proyectos mágicos</h3>
             <p class="card__tech">HTML | SCSS | REACT | MySQL</p>
 
             <div class="gitHub"><a class="gitHub__link" href="https://github.com/crisrodriguezgar/proyectos-magicos"
                     target="_blank"><i class="fa-brands fa-github-alt gitHub__iconProject"></i>
-                    <p class="gitHub__textProject">Ver en GitHub</p>
+                    <p class="gitHub__textProject" data-section="projects" data-value="see">Ver en GitHub</p>
                 </a>
             </div>
         </div>
@@ -247,7 +284,7 @@
     <section class="sectionTech" id="tech">
   <div class="stain">
     <img class="stain__img" src="./assets/mancha-9756b27d.png" alt="icono de mancha">
-    <h2 class="stain__titleAbout">tecnologías</h2>
+    <h2 class="stain__titleAbout" data-section="header" data-value="tech">tecnologías</h2>
   </div>
   <div class="containerTech">
     <i class="fa-brands fa-html5 containerTech__iconTech"></i>
@@ -272,16 +309,16 @@
   <div>
     <ul class="footer__list">
       <a href="#home">
-        <li class="footer__list--about">Inicio</li>
+        <li class="footer__list--about" data-section="header" data-value="home">Inicio</li>
       </a>
       <a href="#aboutMe">
-        <li class="footer__list--about">Sobre mí</li>
+        <li class="footer__list--about" data-section="header" data-value="aboutMe">Sobre mí</li>
       </a>
       <a href="#projects">
-        <li class="footer__list--projects">Proyectos</li>
+        <li class="footer__list--projects" data-section="header" data-value="projects">Proyectos</li>
       </a>
       <a href="#tech">
-        <li class="footer__list--tech">Tecnologías</li>
+        <li class="footer__list--tech" data-section="header" data-value="tech">Tecnologías</li>
       </a>
     </ul>
   </div>
