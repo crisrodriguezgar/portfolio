@@ -25,10 +25,11 @@
   }
   
   &__iconTech {
-    padding: 1.5rem;
-    @include icon(4rem, $backgroundMClaro);
+    padding: 1rem;
+    @include icon(6rem, $backgroundMClaro);
+
     @media (min-width: 768px) {
-      padding: 1rem;
+      padding: 1.5rem;
       @include icon(6rem, $backgroundMClaro);
     }
   }
