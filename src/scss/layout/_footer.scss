@@ -59,6 +59,11 @@
   transition-duration: 0.8s;
   border-radius: 50%;
 
+  @media (min-width: 768px) {
+    margin: 4.5rem;
+  }
+  
+
   &:hover {
     transform: scale(1.1);
     background-color: $button2;
