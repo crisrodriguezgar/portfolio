@@ -23,6 +23,7 @@
     width: 50rem;
     margin-bottom: 15rem;
   }
+  
   &__iconTech {
     padding: 1.5rem;
     @include icon(4rem, $backgroundMClaro);
@@ -32,6 +33,7 @@
     }
   }
 }
+
 .wave {
   background-color: $backgroundM;
   fill: $backgroundMClaro;

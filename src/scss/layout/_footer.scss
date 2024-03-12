@@ -12,11 +12,12 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    
+
     @media (min-width: 768px) {
       gap: 2rem;
       flex-direction: row;
     }
+
     &--about,
     &--projects,
     &--tech {
@@ -40,36 +41,42 @@
   @include icon(2rem, $highlightedText2);
   @include padding(0.5rem, 1.5rem);
 }
-.linkedin{
+
+.linkedin {
   margin-right: 1.5rem;
 }
-// .header {
-//   text-transform: uppercase;
-//   z-index: 5;
-//   position: fixed;
-//   width: 100vw;
-//   opacity: 90%;
-//   background-color: $backgroundH;
-//   display: flex;
-//   justify-content: space-around;
-//   &__list {
-//     display: none;
-//     @media (min-width: 768px) {
-//       display: flex;
-//       padding: 2rem;
-//       gap: 2rem;
-//       @include font($montserrat, 1.5rem, $subtitle, bold);
-//       align-items: center;
-//       &--about,
-//       &--projects,
-//       &--tech {
-//         transition: 0.8s;
-//         cursor: pointer;
-//         color: $subtitle;
-//         &:hover {
-//           transform: scale(1.1);
-//           color: $highlightedText2;
-//         }
-//       }
-//     }
-//   }
+
+.rocket {
+  border: none;
+  background-color: transparent;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 3.5rem;
+  cursor: pointer;
+  transition-duration: 0.8s;
+  border-radius: 50%;
+
+  &:hover {
+    transform: scale(1.1);
+    background-color: $button2;
+    border-radius: 50%;
+  }
+
+  &__img {
+    width: 3rem;
+    @media (min-width: 768px) {
+      width: 4rem;
+    }
+  }
+}
+
+#button-up {
+  display: none;
+  transition-duration: 0.8s; /* ajusta el tiempo y la curva de la transición según lo desees */
+}
+
+.button-up-show {
+  transition-duration: 0.8s;
+  transform: scale(1);
+}
