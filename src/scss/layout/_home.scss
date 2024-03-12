@@ -4,9 +4,11 @@
   @include center-column;
   justify-content: space-evenly;
   position: relative;
+  
   @media (min-width: 560px) {
     flex-direction: row;
   }
+
   @media (min-width: 768px) {
     flex-direction: row;
   }
@@ -16,11 +18,13 @@
   @include center-column;
   justify-content: center;
   position: relative;
+
   &__stain {
     z-index: 1;
     top: -2rem;
     position: absolute;
     width: 26rem;
+
     @media (min-width: 768px) {
       width: 45rem;
       top: -20rem;
@@ -35,6 +39,7 @@
     border-radius: 50%;
     filter: grayscale(100%);
     transition: filter 0.3s ease-in-out;
+
     &:hover {
       filter: grayscale(0%);
     }

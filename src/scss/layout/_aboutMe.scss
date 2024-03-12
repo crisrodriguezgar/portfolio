@@ -2,9 +2,11 @@
   @include center-column;
   background-color: $backgroundM;
 }
+
 .stain {
   display: flex;
   padding-bottom: 2rem;
+
   &__img {
     width: 4rem;
     height: 4rem;
@@ -14,6 +16,7 @@
       height: 6rem;
     }
   }
+
   &__titleAbout {
     text-transform: uppercase;
     @include font($montserrat, 3rem, $button2Text, bold);
@@ -38,6 +41,7 @@
       @include padding(10rem, 0.5rem);
       line-height: 3.2rem;
     }
+
     @media (min-width: 1024px) {
       @include padding(20rem, 0.5rem);
     }
@@ -48,6 +52,7 @@
       align-items: center;
     }
   }
+  
   &__img {
     width: 10rem;
     height: 10rem;

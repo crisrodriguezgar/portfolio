@@ -3,6 +3,7 @@
   background-color: $backgroundM;
   position: relative;
 }
+
 .titleProjects {
   padding-block: 2rem;
   text-transform: uppercase;
@@ -18,11 +19,13 @@
   @include center-column;
   gap: 2rem;
   justify-content: center;
+
   @media (min-width: 768px) {
     flex-direction: row;
     flex-wrap: wrap;
     padding-inline: 10rem;
   }
+
   @media (min-width: 1024px) {
     padding-inline: 25rem;
   }
@@ -32,11 +35,13 @@
   @include btn(none, 1.5rem, $backgroundMClaro);
   @media (min-width: 768px) {
   }
+
   &__title {
     @include margin(0.5rem, 0.5rem);
     @include font($montserrat, 1.7rem, $highlightedText2, bold);
     text-align: center;
   }
+
   &__img {
     @include size(20rem, 14rem);
     margin: 2.3rem;
@@ -46,6 +51,7 @@
       transform: scale(1.08);
     }
   }
+
   &__tech {
     @include font($montserrat, 1.3rem, $highlightedText2, 300);
     @include padding(1.5rem, 1rem);
@@ -67,6 +73,7 @@
     margin: 1rem;
     cursor: pointer;
     transition: 0.8s;
+
     &:hover {
       color: $backgroundM;
     }
@@ -75,6 +82,7 @@
   &__textProject {
     @include font($montserrat, 1.3rem, $highlightedText2, 300);
     transition: 0.8s;
+    
     &:hover {
       color: $backgroundM;
     }

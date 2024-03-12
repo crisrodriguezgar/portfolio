@@ -24,6 +24,7 @@
       transition: 0.8s;
       cursor: pointer;
       color: $subtitle;
+      
       &:hover {
         font-weight: 600;
         color: $highlightedText2;
@@ -31,6 +32,7 @@
     }
   }
 }
+
 .copy {
   @include center-column;
   margin-top: 1rem;
