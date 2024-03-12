@@ -26,22 +26,22 @@ links.forEach((link) => {
 
 /** change languge **/
 
-const changeLanguage = async (language) => {
-  const requestJson = await fetch(`./languages/${language}.json`);
-  const texts = await requestJson.json();
+// const changeLanguage = async (language) => {
+//   const requestJson = await fetch(`./languages/${language}.json`);
+//   const texts = await requestJson.json();
 
-  for (const textToChange of textsToChange) {
-    const section = textToChange.dataset.section;
-    const value = textToChange.dataset.value;
+//   for (const textToChange of textsToChange) {
+//     const section = textToChange.dataset.section;
+//     const value = textToChange.dataset.value;
 
-    textToChange.innerHTML = texts[section][value];
-  }
-};
+//     textToChange.innerHTML = texts[section][value];
+//   }
+// };
 
-languageSwitch.addEventListener('change', async () => {
-  const language = languageSwitch.checked ? 'en' : 'es';
-  await changeLanguage(language);
-});
+// languageSwitch.addEventListener('change', async () => {
+//   const language = languageSwitch.checked ? 'en' : 'es';
+//   await changeLanguage(language);
+// });
 
 
 /** Scroll **/
@@ -51,7 +51,7 @@ function scrollUp(){
 
     if (currentScroll > 0){
         window.requestAnimationFrame(scrollUp);
-        window.scrollTo(0, currentScroll - (currentScroll / 10));
+        window.scrollTo(0, currentScroll - (currentScroll / 25));
     }
 }
 
