@@ -7,7 +7,7 @@ const links = document.querySelectorAll('.headerH__textH');
 const languageSwitch = document.querySelector('.languageSwitch');
 const textsToChange = document.querySelectorAll('[data-section]');
 
-const buttonUp = document.getElementById("button-up");
+const buttonUp = document.getElementById('button-up');
 
 /** hambuger **/
 
@@ -43,28 +43,25 @@ links.forEach((link) => {
 //   await changeLanguage(language);
 // });
 
-
 /** Scroll **/
 
-function scrollUp(){
-    const currentScroll = document.documentElement.scrollTop;
+function scrollUp() {
+  const currentScroll = document.documentElement.scrollTop;
 
-    if (currentScroll > 0){
-        window.requestAnimationFrame(scrollUp);
-        window.scrollTo(0, currentScroll - (currentScroll / 25));
-    }
+  if (currentScroll > 0) {
+    window.requestAnimationFrame(scrollUp);
+    window.scrollTo(0, currentScroll - currentScroll / 10);
+  }
 }
 
-buttonUp.addEventListener("click", scrollUp);
+buttonUp.addEventListener('click', scrollUp);
 
-
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
   const scroll = document.documentElement.scrollTop;
 
   if (scroll > 650) {
-      buttonUp.style.display = "block";
+    buttonUp.style.display = 'block';
   } else {
-      buttonUp.style.display = "none";
+    buttonUp.style.display = 'none';
   }
 });
-
