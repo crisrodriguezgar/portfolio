@@ -65,3 +65,13 @@ window.addEventListener('scroll', function () {
     buttonUp.style.display = 'none';
   }
 });
+
+/** Año actual **/
+const updateYear = () => {
+  const yearElement = document.getElementById('current-year');
+  const currentYear = new Date().getFullYear();
+  yearElement.textContent = currentYear;
+};
+
+// Ejecutar la función cuando se carga la página
+document.addEventListener('DOMContentLoaded', updateYear);
